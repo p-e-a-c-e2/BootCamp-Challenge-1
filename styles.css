@@ -1,0 +1,90 @@
+body {
+    margin: 0;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    color: #fff;
+    background: url('./images/pexels-samerdaboul-1209999.jpg') no-repeat center center/cover; /* Replace with your image path */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    overflow: hidden;
+  }
+  
+  .container {
+    text-align: center;
+    padding: 20px;
+    background: rgba(0, 0, 0, 0.7); /* Semi-transparent background for readability */
+    border-radius: 15px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.5);
+    width: 90%; /* Adjust width for responsiveness */
+    max-width: 600px; /* Limit the max width */
+  }
+  
+  header h1 {
+    font-size: 2.5rem;
+    animation: fadeIn 2s ease-in-out;
+    
+  }
+  
+  header p {
+    font-size: 1.2rem;
+  }
+  
+  .countdown {
+    margin: 20px 0;
+  }
+  
+  #timer {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap; /* Wrap timer items on smaller screens */
+    gap: 10px;
+    color:blue
+  }
+  
+  #timer div {
+    font-size: 1.5rem;
+    text-align: center;
+    flex: 1 1 100px; /* Ensure items shrink and grow based on screen size */
+  }
+  
+  footer {
+    margin-top: 20px;
+    font-size: 1rem;
+  }
+  
+  @keyframes fadeIn {
+    from { opacity: 0; transform: translateY(-20px); }
+    to { opacity: 1; transform: translateY(0); }
+  }
+  
+  /* Media Queries for Specific Screen Sizes */
+  @media (max-width: 768px) {
+    header h1 {
+      font-size: 2rem;
+    }
+  
+    #timer div {
+      font-size: 1.2rem;
+    }
+  }
+  
+  @media (max-width: 480px) {
+    header h1 {
+      font-size: 1.8rem;
+    }
+  
+    header p {
+      font-size: 1rem;
+    }
+  
+    #timer div {
+      font-size: 1rem;
+    }
+  
+    footer {
+      font-size: 0.9rem;
+    }
+  }
+  
