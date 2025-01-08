@@ -1,4 +1,4 @@
-const milestoneDate = new Date("January 15, 2025 10:00:00").getTime();
+const milestoneDate = new Date("January 13, 2025 10:00:00").getTime();
 
 function updateCountdown() {
   const now = new Date().getTime();
@@ -17,7 +17,7 @@ function updateCountdown() {
 
   document.getElementById("days").innerText = days;
   document.getElementById("hours").innerText = hours;
-  document.getElementById("minutes").innerText = minutes;
+  document.getElementById("minutes").innerText = minutes;git
   document.getElementById("seconds").innerText = seconds;
 }
 
