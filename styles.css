@@ -158,8 +158,8 @@ footer .stop-btn {
 
   /* Adjust timer circle size for mobile */
   #timer div {
-    width: 80px; /* Smaller circles */
-    height: 80px;
+    width: 37px; /* Smaller circles */
+    height: 37px;
     border-top: 4px solid hotpink; /* Adjust border thickness */
     border-right: 4px solid hotpink;
   }
