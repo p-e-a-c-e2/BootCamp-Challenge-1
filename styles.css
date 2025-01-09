@@ -1,7 +1,8 @@
 body {
   margin: 0;
-  font-family: Georgia, 'Times New Roman', Times, serif;
-  background: url('./images/pexels-samerdaboul-1209999.jpg') no-repeat center center/cover;
+  font-family: sans-serif;
+  /* background: url('') no-repeat center center/cover; */
+  background: black;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -12,7 +13,7 @@ body {
   
 }
 
-.container {
+/* .container {
   text-align: center;
   padding: 20px;
   background: rgba(0, 0, 0, 0.7);
@@ -20,7 +21,25 @@ body {
   box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.5);
   width: 90%;
   max-width: 600px;
+} */
+
+
+.container {
+  text-align: center;
+  padding: 20px;
+  background: none; /* Keep the background removed */
+  border: none; /* Remove border */
+  width: 100%; /* Full width */
+  max-width: none; /* Remove max-width */
+  height: auto; /* Adjust height according to content */
+  min-height: 200px; /* Keep enough height for content */
+  box-shadow: none; /* Remove shadow */
+  display: flex;
+  flex-direction: column;
+  align-items: center; /* Center content horizontally */
+  justify-content: center; /* Center content vertically */
 }
+
 
 header h1 {
   font-size: 2.5rem;
@@ -39,7 +58,7 @@ header p {
   display: flex;
   justify-content: space-around;
   flex-wrap: wrap;
-  gap: 20px; /* Adjust spacing between timer items */
+  gap: 35px; /* Adjust spacing between timer items */
 }
 
 
@@ -56,14 +75,14 @@ header p {
   
   /* Create the effect for half-colored border */
   border: 6px solid transparent; /* Invisible border to reserve space for color */
-  border-top: 5px solid gold; /* Color the top half border */
+  border-top: 5px solid hotpink; /* Color the top half border */
   border-left: 5px solid transparent; /* Left side of border remains transparent */
   border-bottom: 5px solid transparent; /* Bottom side of border remains transparent */
-  border-right: 5px solid  gold; /* Right side of border remains transparent */
+  border-right: 5px solid  hotpink; /* Right side of border remains transparent */
 }
 
 #timer div:nth-child(4) {
-  border-right: 5px solid gold; 
+  border-right: 5px solid hotpink; 
   border-left: 5px solid transparent; /* Left side of border remains transparent */
   border-bottom: 5px solid transparent; /* Bottom side of border remains transparent */
   border-right: 5px solid transparent;/* Color the right border */
@@ -87,7 +106,7 @@ footer .start-btn, footer .stop-btn {
   padding: 15px 25px;
   font-size: 1rem;
   font-weight: bold;
-  font-family: Georgia, 'Times New Roman', Times, serif;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
   text-transform: uppercase;
   border: none;
   border-radius: 20px;
@@ -97,22 +116,25 @@ footer .start-btn, footer .stop-btn {
 
 footer .start-btn {
   background-color: palevioletred; /* Orange color */
-  color: white;
+  color: black;
 }
 
 /* Hover effect for the Start button */
 footer .start-btn:hover {
-  background-color: gold; /* Gold color on hover */
+  background-color: hotpink; /* Gold color on hover */
 }
 
 /* Hover effect for the Stop button */
 footer .stop-btn:hover {
-  background-color: gold; /* Gold color on hover */
+  background-color: papayawhip; 
+/* Gold color on hover */
 }
 
 
 footer .stop-btn {
-  background-color: palevioletred; /* Red color */
+  background-color:transparent;
+  color: hotpink;
+  border: 2px solid palevioletred; /* Red color */
   cursor: not-allowed;
 }
 
