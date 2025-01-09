@@ -64,8 +64,8 @@ header p {
 
 #timer div {
   position: relative;
-  width: 100px;
-  height: 100px;
+  width: 150px;
+  height: 150px;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -90,13 +90,16 @@ header p {
 
 
 #timer span:first-child {
-  font-size: 2.5rem; /* Larger size for numbers */
-  margin-bottom: 5px;
+  font-size: 5rem; /* Larger size for numbers */
+  margin-bottom: -10px;
 }
 
 #timer span:last-child {
-  font-size: 1rem; /* Smaller size for labels */
+  font-size: 0.8rem;
+  text-transform: uppercase; /* Smaller size for labels */
 }
+
+
 footer {
   text-align: center;
   margin-top: 20px;
@@ -140,40 +143,52 @@ footer .stop-btn {
 
 
 
-
-
-
-
 @keyframes fadeIn {
   from { opacity: 0; transform: translateY(-20px); }
   to { opacity: 1; transform: translateY(0); }
 }
 
-/* Media Queries for Specific Screen Sizes */
-@media (max-width: 768px) {
-  header h1 {
-    font-size: 2rem;
-  }
-
-  #timer div {
-    font-size: 1.2rem;
-  }
-}
-
 @media (max-width: 480px) {
+  /* Adjust timer container spacing for mobile */
+  #timer {
+    gap: 10px; /* Reduce space between circles */
+    flex-wrap: wrap;
+    justify-content: center; /* Center align on smaller screens */
+  }
+
+  /* Adjust timer circle size for mobile */
+  #timer div {
+    width: 80px; /* Smaller circles */
+    height: 80px;
+    border-top: 4px solid hotpink; /* Adjust border thickness */
+    border-right: 4px solid hotpink;
+  }
+
+  /* Adjust number size inside the circle */
+  #timer span:first-child {
+    font-size: 1.5rem; /* Smaller font size for numbers */
+    margin-bottom: -5px;
+  }
+
+  /* Adjust label size below numbers */
+  #timer span:last-child {
+    font-size: 0.7rem; /* Smaller label font */
+  }
+
+  /* Adjust header font sizes */
   header h1 {
-    font-size: 1.8rem;
+    font-size: 1.8rem; /* Smaller header text */
   }
 
   header p {
     font-size: 1rem;
+    margin-bottom: 15px;
   }
 
-  #timer div {
-    font-size: 1rem;
-  }
-
-  footer {
-    font-size: 0.9rem;
+  /* Footer buttons adjustments */
+  footer .start-btn,
+  footer .stop-btn {
+    padding: 8px 15px;
+    font-size: 0.8rem; /* Smaller button text */
   }
 }
