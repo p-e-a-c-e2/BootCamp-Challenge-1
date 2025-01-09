@@ -118,7 +118,7 @@ footer .start-btn, footer .stop-btn {
 }
 
 footer .start-btn {
-  background-color: palevioletred; /* Orange color */
+  background-color: white; /* Orange color */
   color: black;
 }
 
@@ -129,14 +129,14 @@ footer .start-btn:hover {
 
 /* Hover effect for the Stop button */
 footer .stop-btn:hover {
-  background-color: papayawhip; 
+  background-color: palevioletred; 
 /* Gold color on hover */
 }
 
 
 footer .stop-btn {
   background-color:transparent;
-  color: hotpink;
+  color: white;
   border: 2px solid palevioletred; /* Red color */
   cursor: not-allowed;
 }
